@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Picker</title>
+    <style>
+        /* Style for the time picker container */
+        .time-picker-container {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* Style for the columns */
+        .time-column {
+            display: inline-block;
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        .time-column select {
+            font-size: 16px;
+            padding: 5px;
+            width: 70px;
+        }
+
+        /* Button to trigger the time picker */
+        #time-picker-button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Choose Time</h2>
+    
+    <!-- Static Time Picker -->
+    <div class="time-picker-container">
+        <div class="time-column">
+            <label for="hour">Hour:</label>
+            <select id="hour">
+                <!-- Options for hours 1-12 -->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        </div>
+
+        <div class="time-column">
+            <label for="period">AM/PM:</label>
+            <select id="period">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
